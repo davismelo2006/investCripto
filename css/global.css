@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --main-color: #ff7716;
+  --main-color-darker: #e76a11;
+  --secondary-color: #fcb900;
+  --bg-color: #141414;
+  --bg-gradient: linear-gradient(180deg, var(--bg-color), var(--main-color));
+  --bg-gradient-reverse: linear-gradient(
+    180deg,
+    var(--main-color),
+    var(--bg-color)
+  );
+  --font-color: #f1f1f1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--font-color);
+}
+
+/* home data*/
+
+.title__home {
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+}
+
+.title__home span {
+  display: block;
+  font-size: 2rem;
+  font-weight: 900;
+  text-align: center;
+  letter-spacing: 0.3px;
+}
+
+.title__home span:last-of-type {
+  color: var(--main-color);
+}
+
+.video__home {
+  width: 100%;
+  max-width: 650px;
+}
+
+#home button,
+.video__home {
+  margin: auto;
+}
+/*---------------*/
+
+h2 {
+  color: var(--main-color);
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-top: 10px;
+  background-color: #fcb900;
+  width: max-content;
+  text-shadow: 0px 0px 5px #2222227a;
+  padding: 0 5px;
+}
+
+button {
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: 700;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  background-color: var(--main-color);
+  text-shadow: 0px 0px 5px #2222227a;
+  color: #fff;
+  box-shadow: 0px 0px 32px var(--secondary-color);
+  max-width: max-content;
+}
+
+footer {
+  text-align: center;
+  font-weight: 200;
+  padding: 20px 0;
+  background-color: var(--bg-color);
+}
+
+.hidden {
+  display: none;
+}

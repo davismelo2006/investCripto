@@ -6,8 +6,105 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Investidor Bitcoin</title>
         <meta name="description" content="Invista no mercado do futuro!">
+        <link rel="stylesheet" href="/css/global.css">
+        <link rel="stylesheet" href="/css/sections.css">
     </head>
     <body>
+        <main>
+            <section id="home">
+                <div class="title__home">
+                    <span>DESCUBRA HOJE</span>
+                    <span>COMO INVESTIR NO MERCADO QUE MAIS CRESCE!</span>
+                </div>
 
+                <div class="video__home">
+                    <iframe src="https://www.youtube.com/watch?v=HmZKgaHa3Fg"
+                        width="100%" height="100%" allow="accelerometer;
+                        autoplay; clipboard-write; encrypted-media;
+                        gyroscope; picture-in-picture" allowfullscreen
+                        frameborder="0"></iframe>
+                </div>
+
+
+                <button>QUERO APRENDER</button>
+            </section>
+
+            <section id="vantagens">
+                <h2>Vantagens</h2>
+            </section>
+
+            <section>
+                <h2>Depoimentos</h2>
+            </section>
+
+            <section id="oferta">
+                <h2>Oferta especial</h2>
+            </section>
+
+            <section id="duvidas">
+                <h2>Dúvidas Frequentes</h2>
+
+                <div class="duvidas__wrapper">
+                    <div class="duvida__container">
+                        <div class="duvida__titulo">
+                            <p>lorem</p>
+                        </div>
+                        <div class="duvida__conteudo hidden">
+                            <p>Lorem ipsum dolor sit amet
+                                consectetur adipisicing elit. Eaque,
+                                repudiandae.</p>
+                        </div>
+                    </div>
+
+                    <div class="duvida__container">
+                        <div class="duvida__titulo">
+                            <p>lorem</p>
+                        </div>
+                        <div class="duvida__conteudo hidden">
+                            <p>Lorem ipsum dolor sit amet
+                                consectetur adipisicing elit. Eaque,
+                                repudiandae.</p>
+                        </div>
+                    </div>
+
+
+                    <div class="duvida__container">
+                        <div class="duvida__titulo">
+                            <p>lorem</p>
+                        </div>
+                        <div class="duvida__conteudo hidden">
+                            <p>Lorem ipsum dolor sit amet
+                                consectetur adipisicing elit. Eaque,
+                                repudiandae.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>Copyright 2022 – Investidor Bitcoin ®
+            </p>
+        </footer>
+
+        <script>
+            const all_duvidas = document.querySelectorAll(".duvida__container");
+
+            all_duvidas.forEach((el) => {
+                el.addEventListener("click", () => {
+                    titulo = el.querySelector(".duvida__titulo").querySelector("p");
+                    conteudo = el.querySelector(".duvida__conteudo")
+
+                    if(titulo.className === "selecionado"){
+                        titulo.classList.remove("selecionado");
+                        conteudo.classList.add("hidden")
+                    } else {
+                        titulo.classList.add("selecionado");
+                        conteudo.classList.remove("hidden")
+                    }
+                })
+            })
+
+        </script>
     </body>
 </html>

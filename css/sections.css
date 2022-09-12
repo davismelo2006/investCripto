@@ -1,0 +1,60 @@
+section {
+  padding: 50px 20px;
+}
+
+#home {
+  background-image: url("../img/bitcoin-wallpaper.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+}
+
+section:not(#home) {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* duvidas */
+
+.duvida__container {
+  width: 100%;
+  max-width: 600px;
+  margin: auto auto 7.5px auto;
+  padding: 10px 0;
+  border-bottom: 2px solid var(--font-color);
+  position: relative;
+}
+
+.duvida__titulo {
+  user-select: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.duvida__titulo p.selecionado {
+  color: var(--main-color);
+}
+
+.duvida__titulo::after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: -15px;
+  width: 0;
+  height: 0;
+  border-top: 7.5px solid transparent;
+  border-bottom: 7.5px solid transparent;
+  border-left: 7.5px solid var(--main-color);
+}
+
+.duvida__conteudo {
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: 0.25s ease all;
+}
