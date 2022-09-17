@@ -6,8 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Investidor Bitcoin</title>
         <meta name="description" content="Invista no mercado do futuro!">
-        <link rel="stylesheet" href="/css/global.css">
-        <link rel="stylesheet" href="/css/sections.css">
+        <link rel="stylesheet" href="./css/global.css">
+        <link rel="stylesheet" href="./css/sections.css">
+        <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
     </head>
     <body>
         <main>
@@ -29,16 +30,122 @@
                 <button>QUERO APRENDER</button>
             </section>
 
-            <section id="vantagens">
-                <h2>Vantagens</h2>
+            <section id="sobre">
+                <h2>Sobre o produto</h2>
             </section>
 
-            <section>
+            <section id="publico">
+                <div class="publico__titulo">
+                    <h3>Esse Ebook</h3>
+                    <h2>É para você que:</h2>
+                </div>
+
+                <div class="publico__wrapper">
+                    <div class="card">
+                        <div class="card__data">
+                            <img src="./img/graph-icon.png" alt="graph-icon">
+                            <p>Realmente quer sair do zero e faturar milhões com
+                                a internet através de lançamentos de
+                                infoprodutos.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card__data">
+                            <img src="./img/bag-icon.png" alt="bag-icon">
+
+                            <p>Deseja ser livre financeiramente e construir
+                                riqueza na internet mesmo sem aparecer.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card__data">
+                            <img src="./img/globe-icon.png" alt="globe-icon">
+                            <p>Quer fugir do caminho tradicional, curtir a vida,
+                                viajar o mundo e viver a vida do seu jeito
+                                enquanto trabalha com a internet.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </section>
+
+            <section id="depoimentos">
                 <h2>Depoimentos</h2>
-            </section>
 
-            <section id="oferta">
-                <h2>Oferta especial</h2>
+                <div class="depoimentos__wrapper">
+                    <div class="card">
+                        <img src="./img/aspas-icon.png" alt="aspas-icon">
+
+                        <div class="card__data">
+                            <p>Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Qui, quasi? Reiciendis
+                                possimus explicabo magni voluptate quisquam.
+                                Fuga eum voluptate perferendis.</p>
+                        </div>
+
+                        <div class="card__user">
+                            <p>Carlos Arantes</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="./img/aspas-icon.png" alt="aspas-icon">
+
+                        <div class="card__data">
+                            <p>Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Qui, quasi? Reiciendis
+                                possimus explicabo magni voluptate quisquam.
+                                Fuga eum voluptate perferendis.</p>
+                        </div>
+
+                        <div class="card__user">
+                            <p>Carlos Arantes</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="./img/aspas-icon.png" alt="aspas-icon">
+
+                        <div class="card__data">
+                            <p>Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Qui, quasi? Reiciendis
+                                possimus explicabo magni voluptate quisquam.
+                                Fuga eum voluptate perferendis.</p>
+                        </div>
+
+                        <div class="card__user">
+                            <p>Carlos Arantes</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="./img/aspas-icon.png" alt="aspas-icon">
+
+                        <div class="card__data">
+                            <p>Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Qui, quasi? Reiciendis
+                                possimus explicabo magni voluptate quisquam.
+                                Fuga eum voluptate perferendis.</p>
+                        </div>
+
+                        <div class="card__user">
+                            <p>Carlos Arantes</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="depoimentos__buttons">
+                    <a></a>
+                    <a></a>
+                </div>
             </section>
 
             <section id="duvidas">
@@ -60,13 +167,12 @@
                         <div class="duvida__titulo">
                             <p>lorem</p>
                         </div>
-                        <div class="duvida__conteudo hidden">
+                        <div class="duvida__conteudo">
                             <p>Lorem ipsum dolor sit amet
                                 consectetur adipisicing elit. Eaque,
                                 repudiandae.</p>
                         </div>
                     </div>
-
 
                     <div class="duvida__container">
                         <div class="duvida__titulo">
@@ -87,24 +193,6 @@
             </p>
         </footer>
 
-        <script>
-            const all_duvidas = document.querySelectorAll(".duvida__container");
-
-            all_duvidas.forEach((el) => {
-                el.addEventListener("click", () => {
-                    titulo = el.querySelector(".duvida__titulo").querySelector("p");
-                    conteudo = el.querySelector(".duvida__conteudo")
-
-                    if(titulo.className === "selecionado"){
-                        titulo.classList.remove("selecionado");
-                        conteudo.classList.add("hidden")
-                    } else {
-                        titulo.classList.add("selecionado");
-                        conteudo.classList.remove("hidden")
-                    }
-                })
-            })
-
-        </script>
+        <script src="./js/main.js"></script>
     </body>
 </html>
