@@ -20,7 +20,7 @@ section:not(#home) {
   margin: auto auto 60px auto;
 }
 
-section:not(#publico) {
+section:not(#publico) h2 {
   text-align: center;
 }
 
