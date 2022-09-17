@@ -17,12 +17,22 @@ section {
 section:not(#home) {
   width: 100%;
   max-width: 950px;
-  margin: auto;
+  margin: auto auto 60px auto;
 }
 
-section#depoimentos h2,
-section#duvidas h2 {
+section:not(#publico) {
   text-align: center;
+}
+
+/* sobre */
+
+#sobre p {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+#sobre p:first-of-type {
+  margin-bottom: 30px;
 }
 
 /* publico */
